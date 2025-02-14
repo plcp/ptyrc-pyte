@@ -967,7 +967,7 @@ class Screen:
             for x in range(self.columns):
                 self.buffer[y][x] = self.buffer[y][x]._replace(data="E")
 
-    def select_graphic_rendition(self, *attrs: int) -> None:
+    def select_graphic_rendition(self, *attrs: int, **private) -> None:
         """Set display attributes.
 
         :param list attrs: a list of display attributes to set.
